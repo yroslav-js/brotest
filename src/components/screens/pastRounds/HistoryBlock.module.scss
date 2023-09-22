@@ -1,0 +1,31 @@
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+  position: relative;
+  padding-top: 220px;
+}
+
+.history div {
+  margin: auto;
+}
+
+.history div img {
+  width: 110%;
+}
+
+.history .descBlock {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .history {
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-row-gap: 75px;
+
+    object {
+      width: 100%;
+    }
+  }
+}

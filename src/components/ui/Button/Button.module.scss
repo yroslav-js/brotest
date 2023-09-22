@@ -1,0 +1,122 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 37px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 22px;
+  transition: 0.3s;
+}
+
+.buttonPurpleOutlined {
+  border: 1px solid #6856e9;
+}
+
+.buttonPurpleOutlined:hover {
+  background: #6856e9;
+  color: white;
+}
+
+.buttonPurpleOutlined:hover img {
+  filter: brightness(0) invert(0);
+  opacity: 1;
+}
+
+.buttonSizeA {
+  padding: 0 50px;
+  line-height: 74px;
+}
+
+.buttonSizeB {
+  padding: 0 30px;
+  line-height: 64px;
+}
+
+.buttonSizeC {
+  font-size: 20px !important;
+  margin-top: 30px;
+  color: #dbd7d2;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  line-height: 64px;
+}
+
+.buttonPurpleFilled {
+  background: #6856e9;
+  border: 1px solid #6856e9;
+}
+
+.buttonGreenFilled {
+  background: #77ef8b;
+  border: 1px solid #77ef8b;
+  color: #1b1f28 !important;
+}
+.buttonGreenFilled img {
+  filter: brightness(0) invert(0);
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 1400px) {
+  .button {
+    font-size: 21px;
+  }
+
+  .buttonSizeA {
+    padding: 0 40px;
+  }
+
+  .buttonSizeB {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headerButton.button {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .headerButton.button img {
+    margin-right: 0;
+    height: 26px;
+    filter: none;
+  }
+
+  .headerButton.button span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buttonSizeB {
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    font-size: 21px;
+  }
+
+  .buttonSizeB {
+    line-height: 54px;
+  }
+
+  .buttonSizeC {
+    min-width: 200px;
+  }
+}

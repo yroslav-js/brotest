@@ -1,0 +1,34 @@
+.audit {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 20px;
+  padding: 35px 60px;
+  box-sizing: border-box;
+  border: 1px solid #323845;
+}
+
+.audit img {
+  display: inline-block;
+  height: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .audit {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 25px 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .audit {
+    grid-template-columns: 1fr;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
+
+  .audit div:first-child {
+    display: none;
+  }
+}

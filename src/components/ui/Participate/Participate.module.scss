@@ -1,0 +1,174 @@
+.popupOverlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  overflow: auto;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .2s linear;
+}
+
+.popupOverlay.popupOpen {
+  opacity: 1;
+  z-index: 10;
+}
+
+.popupOverlay.view {
+  z-index: 10;
+  opacity: 0;
+}
+
+.popup {
+  display: inline-block;
+  position: relative;
+  padding: 37px;
+  margin: auto;
+  max-width: 600px;
+  background: #1b1f28;
+  -webkit-border-radius: 63px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 63px;
+  -moz-border-radius-topright: 0;
+  border-radius: 63px;
+  border-top-right-radius: 0;
+  text-align: center;
+}
+
+.popup__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.popup__close img {
+  width: 26px;
+}
+
+.popup__animation {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.popup__animation object {
+  width: 100px;
+}
+
+.popupPurchase .heading {
+  margin: 40px 0 0;
+}
+
+.popupResult .heading {
+  margin: 40px 0;
+  color: #77ef8b;
+}
+
+.popupResult p {
+  margin-bottom: 20px;
+}
+
+.popupResult strong {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.popupResult .button {
+  margin-top: 20px;
+}
+
+.popup__range {
+  margin: 40px 0 20px;
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  font-size: 24px;
+  color: #dbd7d2;
+}
+
+.popup__range div {
+  margin: auto;
+  width: 100%;
+}
+
+.popup__range div input {
+  width: 100%;
+}
+
+.popup__ticketsTerms {
+  font-size: 16px;
+  color: #dbd7d2;
+}
+
+.popup__ticketsTerms span {
+  display: block;
+  margin-top: 10px;
+}
+
+.popup__tickets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 45px;
+}
+
+.popup__tickets div {
+  width: 100%;
+}
+
+.popup__tickets input {
+  display: inline-block;
+  width: 100%;
+  background: #323845;
+  border: 0;
+  outline: 0;
+  border-radius: 37px;
+  font-size: 34px;
+  color: #77ef8b;
+  line-height: 74px;
+  text-align: center;
+}
+
+.popup__tickets .button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    padding: 50px 16px 20px;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+  }
+
+  .popupPurchase .heading {
+    margin-top: 20px;
+  }
+
+  .popup .desc-block p {
+    margin-top: 20px;
+  }
+
+  .popup .desc-block p span {
+    font-size: 21px;
+  }
+
+  .popup .popup__range {
+    margin: 20px 0;
+    grid-template-columns: 65px 1fr 65px;
+  }
+
+  .popup__tickets {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
+}

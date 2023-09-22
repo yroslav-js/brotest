@@ -1,0 +1,58 @@
+.funding-tiers .desc-block {
+  max-width: 500px;
+}
+
+.funding-tiers__block {
+  display: inline-block;
+  vertical-align: top;
+  margin: 80px 200px 0 0;
+}
+
+.funding-tiers__block img {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.funding-tiers__block span {
+  display: block;
+  margin-top: 20px;
+  color: #dbd7d2;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.funding-tiers__block span b {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 700px) {
+  .funding-tiers {
+    text-align: center;
+  }
+
+  .funding-tiers__block {
+    display: block;
+    margin: 80px 0 0 0;
+  }
+
+  .funding-tiers__block .heading {
+    line-height: 110%;
+  }
+
+  .funding-tiers__block img {
+    margin-left: 15px;
+    height: 70px;
+  }
+
+  .funding-tiers .desc-block {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .funding-tiers__block .heading {
+    line-height: 130%;
+  }
+}

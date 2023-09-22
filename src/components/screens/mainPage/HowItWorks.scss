@@ -1,0 +1,127 @@
+.how-it-works__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  margin-top: 80px;
+}
+
+.how-it-works__item {
+  display: inline-block;
+  position: relative;
+  padding-right: 70px;
+}
+
+.how-it-works__item .heading {
+  margin: 80px 0 30px;
+  min-height: 130px;
+}
+
+.how-it-works__item:last-child .how-it-works__number {
+  background: #6856e9;
+}
+
+.how-it-works__item:last-child .how-it-works__number:before, .how-it-works__item:last-child .how-it-works__number:after {
+  content: "";
+  background: #6856e9;
+}
+
+.how-it-works__number {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  color: #1b1f28;
+  background: #d9d9d9;
+}
+
+.how-it-works__number:before, .how-it-works__number:after {
+  content: "";
+  position: absolute;
+  background: #d9d9d9;
+}
+
+.how-it-works__number:before {
+  top: -13px;
+  left: 12px;
+  width: 24px;
+  height: 74px;
+}
+
+.how-it-works__number:after {
+  left: -13px;
+  top: 12px;
+  width: 74px;
+  height: 24px;
+}
+
+.how-it-works__number span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1400px) {
+  .how-it-works__item {
+    padding-right: 50px;
+  }
+
+  .how-it-works__item-title {
+    font-size: 30px;
+  }
+
+  .how-it-works__item-desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .how-it-works__items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .how-it-works__item {
+    margin-top: 50px;
+    padding-left: 120px;
+    min-height: 140px;
+  }
+
+  .how-it-works__number {
+    position: absolute;
+    left: 0;
+    top: 16px;
+  }
+
+  .how-it-works .heading {
+    margin: 24px 0 0;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .how-it-works {
+    text-align: center;
+  }
+
+  .how-it-works__items {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .how-it-works__number {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    left: auto;
+    top: auto;
+  }
+
+  .how-it-works__item {
+    padding: 0;
+    margin-top: 80px;
+    min-height: auto;
+  }
+}

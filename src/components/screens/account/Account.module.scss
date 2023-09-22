@@ -1,0 +1,53 @@
+.account {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+  position: relative;
+  padding-top: 220px;
+}
+
+.account div {
+  margin: auto;
+}
+
+.account div img {
+  width: 100%;
+}
+
+.account .descBlock {
+  margin-bottom: 50px;
+}
+
+.green {
+  font-size: 21px;
+  font-weight: 500;
+  color: #77ef8b;
+  cursor: pointer;
+}
+
+.buttonWrapper {
+  margin-left: 20px !important;
+  display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+  .account {
+    grid-column-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .account {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .account .desc-block {
+    max-width: 500px;
+    margin: 0 auto 50px;
+  }
+
+  .account__animation {
+    display: none;
+  }
+}

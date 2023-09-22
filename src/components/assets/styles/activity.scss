@@ -1,0 +1,264 @@
+.table {
+  position: relative;
+  width: 100%;
+  background: #323845;
+  box-sizing: border-box;
+}
+
+.table__container {
+  padding: 30px 40px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 37px;
+}
+
+.table__data-container {
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.table__data-content {
+  min-width: 1000px;
+}
+
+.table--round-transactions {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.table--round-transactions .table__headings-line {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table--round-transactions .table__line, .table--round-transactions .table__headings-line {
+  grid-template-columns: 140px 220px 1fr;
+}
+
+.table--round-transactions .table__line--winner-1x, .table--round-transactions .table__line--winner-2x {
+  margin: 0 -20px;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.table--round-transactions .table__line--winner-1x img, .table--round-transactions .table__line--winner-2x img {
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  margin: 9px 10px 0 0;
+}
+
+.table--round-transactions .table__line--winner-1x div:last-child a {
+  color: #77ef8b;
+}
+
+.table--round-transactions .table__line--winner-2x div:last-child a {
+  color: #6856e9;
+}
+
+.table--past-rounds {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.table--past-rounds .table__headings-line {
+  padding: 0 37px;
+  grid-template-columns: 160px 100px 1fr 140px 200px;
+}
+
+.table--past-rounds .table__group-line {
+  margin-top: 25px;
+  padding: 20px 37px;
+  grid-template-columns: 200px 1fr;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 37px;
+}
+
+.table--past-rounds .table__group-line-round {
+  margin: auto 0;
+}
+
+.table--past-rounds .table__group-line-round a {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.table--past-rounds .table__group-line-round a:hover {
+  color: #77ef8b;
+}
+
+.table--past-rounds .table__group-line-round p {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #dbd7d2;
+  line-height: 130%;
+}
+
+.table--past-rounds .table__group-line .table__line {
+  grid-template-columns: 100px 1fr 140px 200px;
+}
+
+.table--past-rounds .table__group-line .table__line--winner div:last-child {
+  font-weight: 600;
+}
+
+.table--past-rounds .table__group-line .table__line--winner-1x div:last-child {
+  color: #77ef8b;
+}
+
+.table--past-rounds .table__group-line .table__line--winner-2x div:last-child {
+  color: #6856e9;
+}
+
+.table--account {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.table--account .table__headings-line {
+  padding: 0 37px;
+  grid-template-columns: 140px 100px 1fr 130px 140px;
+  grid-gap: 14px;
+}
+
+.table--account .table__group-line {
+  margin-top: 25px;
+  padding: 20px 37px;
+  grid-template-columns: 150px 1fr;
+  min-height: 172px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 37px;
+  box-sizing: border-box;
+}
+
+.table--account .table__group-line--active {
+  padding: 16px 33px;
+  border: 4px solid #77ef8b;
+}
+
+.table--account .table__group-line--active p span {
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.table--account .table__group-line-round {
+  margin: auto 0;
+}
+
+.table--account .table__group-line-round a {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.table--account .table__group-line-round a:hover {
+  color: #77ef8b;
+}
+
+.table--account .table__group-line-round p {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #dbd7d2;
+  line-height: 130%;
+}
+
+.table--account .table__group-line .table__line {
+  grid-template-columns: 100px 1fr 130px 140px;
+  grid-gap: 14px;
+}
+
+.table--account .table__group-line .table__line img {
+  display: inline-block;
+  vertical-align: top;
+  margin: 11px 8px 0 0;
+  width: 20px;
+}
+
+.table--account .table__group-line .table__line--winner-1x div:nth-child(3), .table--account .table__group-line .table__line--winner-1x div:last-child {
+  color: #77ef8b;
+  font-weight: 600;
+}
+
+.table--account .table__group-line .table__line--winner-1x div:nth-child(2) a {
+  color: #77ef8b;
+}
+
+.table--account .table__group-line .table__line--winner-2x div:nth-child(3), .table--account .table__group-line .table__line--winner-2x div:last-child {
+  color: #6856e9;
+  font-weight: 600;
+}
+
+.table--account .table__group-line .table__line--winner-2x div:nth-child(2) a {
+  color: #6856e9;
+}
+
+.table__content {
+  margin-top: 50px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.table__headings-line, .table__group-line {
+  display: grid;
+}
+
+.table__headings-line, .table__line {
+  display: grid;
+  grid-gap: 40px;
+  line-height: 44px;
+  font-size: 18px;
+  color: #f8f4e1;
+}
+
+.table__headings-line div, .table__line div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table__headings-line div span, .table__line div span {
+  margin-left: 20px;
+}
+
+.table__headings-line div a, .table__line div a {
+  color: white;
+  transition: 0.3s;
+}
+
+.table__headings-line div a:hover, .table__line div a:hover {
+  color: #6856e9;
+}
+
+.table .button {
+  margin: 50px 30px 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .table--round-transactions .table__line, .table--round-transactions .table__headings-line {
+    grid-template-columns: 100px 190px 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .table .heading {
+    text-align: center;
+  }
+
+  .table__buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .table .button {
+    margin: 30px 15px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table__container {
+    padding: 20px 30px;
+  }
+}

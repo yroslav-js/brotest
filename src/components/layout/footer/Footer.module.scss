@@ -1,0 +1,147 @@
+.logoLoop {
+  display: inline-block;
+  vertical-align: top;
+  width: 300vw;
+  background-image: url("/images/bro2bro-run.svg");
+  height: 74px;
+  min-width: 2800px;
+  background-repeat: repeat;
+  animation: moving 17s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1341px, 0, 0);
+  }
+}
+
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 240px;
+}
+
+.footer .heading {
+  max-width: 450px;
+}
+
+.footer__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto 0;
+}
+
+.footer__menu a {
+  display: block;
+  color: #dbd7d2;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  transition: 0.3s;
+}
+
+.footer__menu a:hover {
+  color: white;
+}
+
+.footer__menu a.selected {
+  color: #77ef8b;
+}
+
+.footer__menu a.email {
+  color: #6856e9;
+}
+
+.footer__menu a.email:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin: auto 0;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 27px;
+  text-align: center;
+}
+
+.footer__social a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 0;
+}
+
+.footer__social a img {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -10px;
+  height: 60px;
+}
+
+.footer__social a span {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 6px;
+  font-size: 22px;
+  line-height: 60px;
+  color: #dbd7d2;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer__menu {
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__menu {
+    display: inline-block;
+    grid-template-columns: auto;
+    margin: 50px 0 0;
+  }
+
+  .footer__menu a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8%;
+  }
+
+  .footer__social {
+    margin-top: 80px;
+  }
+
+  .footer__social a {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer .heading {
+    margin: auto;
+  }
+
+  .footer__menu {
+    margin: 70px 0 0;
+  }
+
+  .footer__menu a {
+    margin: 0 20px;
+  }
+}
